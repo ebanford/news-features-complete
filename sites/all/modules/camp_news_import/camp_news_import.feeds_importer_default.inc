@@ -36,7 +36,43 @@ function camp_news_import_feeds_importer_default() {
         'expire' => '-1',
         'author' => 0,
         'authorize' => 0,
-        'mappings' => array(),
+        'mappings' => array(
+          0 => array(
+            'source' => 'callout',
+            'target' => 'field_callout',
+            'unique' => FALSE,
+          ),
+          1 => array(
+            'source' => 'image_url',
+            'target' => 'field_thumbnail_image',
+            'unique' => FALSE,
+          ),
+          2 => array(
+            'source' => 'url',
+            'target' => 'field_link:url',
+            'unique' => FALSE,
+          ),
+          3 => array(
+            'source' => 'pubdate',
+            'target' => 'created',
+            'unique' => FALSE,
+          ),
+          4 => array(
+            'source' => 'published',
+            'target' => 'status',
+            'unique' => FALSE,
+          ),
+          5 => array(
+            'source' => 'url',
+            'target' => 'guid',
+            'unique' => 1,
+          ),
+          6 => array(
+            'source' => 'image_alt',
+            'target' => 'field_thumbnail_alt',
+            'unique' => FALSE,
+          ),
+        ),
         'update_existing' => '0',
         'input_format' => 'filtered_html',
         'skip_hash_check' => 0,
