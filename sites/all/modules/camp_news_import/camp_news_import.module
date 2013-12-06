@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Camp News Import feature.
+ */
+
+include_once 'camp_news_import.features.inc';

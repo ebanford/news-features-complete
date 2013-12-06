@@ -1,0 +1,11 @@
+name = Camp News Import
+description = Camp News Import Feature
+core = 7.x
+package = CAMP Features
+version = 7.x-1.0
+project = camp_news_import
+dependencies[] = ctools
+dependencies[] = feeds
+features[ctools][] = feeds:feeds_importer_default:1
+features[features_api][] = api:2
+features[feeds_importer][] = camp_news_import
