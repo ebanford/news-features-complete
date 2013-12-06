@@ -27,7 +27,7 @@ function camp_news_import_feeds_importer_default() {
       ),
     ),
     'parser' => array(
-      'plugin_key' => 'FeedsSyndicationParser',
+      'plugin_key' => 'camp_news_parser',
       'config' => array(),
     ),
     'processor' => array(
