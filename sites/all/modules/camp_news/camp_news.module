@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Camp News feature.
+ */
+
+include_once 'camp_news.features.inc';
